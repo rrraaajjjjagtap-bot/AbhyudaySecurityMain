@@ -53,9 +53,9 @@ const Header = () => {
           </nav>
 
           <div className="hidden lg:flex items-center gap-4">
-            <a href="tel:8766970868" className="flex items-center gap-2 text-sm text-foreground hover:text-primary transition-colors">
+            <a href="tel:9206472006" className="flex items-center gap-2 text-sm text-foreground hover:text-primary transition-colors">
               <Phone className="h-4 w-4" />
-              <span>8766970868</span>
+              <span>9206472006</span>
             </a>
             <Button onClick={() => scrollToSection("contact")} className="bg-primary hover:bg-primary/90">
               Book Visit
@@ -90,9 +90,9 @@ const Header = () => {
               Contact
             </button>
             <div className="flex flex-col gap-3 pt-4 border-t border-border">
-              <a href="tel:8766970868" className="flex items-center gap-2 text-sm text-foreground">
+              <a href="tel:9206472006" className="flex items-center gap-2 text-sm text-foreground">
                 <Phone className="h-4 w-4" />
-                <span>8766970868</span>
+                <span>9206472006</span>
               </a>
               <Button onClick={() => scrollToSection("contact")} className="w-full bg-primary hover:bg-primary/90">
                 Book Visit

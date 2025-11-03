@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Award, Users } from "lucide-react";
 import teamPhoto from "@/assets/team-photo.jpg";
+import logo from "@/assets/logo.png";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -20,6 +21,15 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Text Content */}
           <div className="space-y-6 md:space-y-8 animate-slide-in-left">
+            {/* Logo */}
+            <div className="mb-6 animate-fade-in">
+              <img 
+                src={logo} 
+                alt="Abhyuday Security Services Logo" 
+                className="h-16 sm:h-20 md:h-24 w-auto"
+              />
+            </div>
+            
             <div className="space-y-3 md:space-y-4">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
                 <span className="text-foreground">Your Protection Is</span>

@@ -1,5 +1,9 @@
 import { Building2, Users, ShieldCheck, Video, Car, Home, Factory, School } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import eventSecurity from "@/assets/event-security.jpg";
+import securityTeam from "@/assets/security-team-uniform.jpg";
+import bouncerImg from "@/assets/bouncer.jpg";
+import executiveSecurity from "@/assets/executive-security.jpg";
 
 const Services = () => {
   const services = [
@@ -13,13 +17,13 @@ const Services = () => {
       icon: Users,
       title: "Event Security",
       description: "Professional crowd management and security for events, conferences, exhibitions, and private gatherings.",
-      image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&h=300&fit=crop"
+      image: eventSecurity
     },
     {
       icon: ShieldCheck,
       title: "Personal Protection",
       description: "Elite bodyguard services for VIPs, executives, and high-profile individuals with discretion and expertise.",
-      image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=400&h=300&fit=crop"
+      image: executiveSecurity
     },
     {
       icon: Video,
@@ -31,13 +35,13 @@ const Services = () => {
       icon: Car,
       title: "Armed Security",
       description: "Licensed armed guards for high-risk locations, cash transit, and valuable asset protection.",
-      image: "https://images.unsplash.com/photo-1595078475328-1ab05d0a6a0e?w=400&h=300&fit=crop"
+      image: bouncerImg
     },
     {
       icon: Home,
       title: "Residential Security",
       description: "Gated community and residential complex security with background-verified personnel.",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=300&fit=crop"
+      image: securityTeam
     },
     {
       icon: Factory,
