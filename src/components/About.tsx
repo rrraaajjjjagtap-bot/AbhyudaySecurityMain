@@ -1,5 +1,5 @@
 import { CheckCircle, Shield, Users, Award, Clock, Target } from "lucide-react";
-import founderRef from "@/assets/founder-reference.png";
+import founderRef from "@/assets/founder-photo.png";
 
 const About = () => {
   const features = [

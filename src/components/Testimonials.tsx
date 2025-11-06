@@ -6,42 +6,36 @@ const Testimonials = () => {
     {
       name: "Rajesh Sharma",
       role: "CEO, Tech Solutions Pvt Ltd",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
       rating: 5,
       text: "Abhyuday Security has been protecting our corporate office for over 3 years. Their professionalism and military-grade training are evident in every interaction. Highly recommended!",
     },
     {
       name: "Priya Desai",
       role: "Residential Society President",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
       rating: 5,
       text: "Our gated community feels much safer with their trained personnel. The 24/7 monitoring and quick response to incidents have given all residents peace of mind.",
     },
     {
       name: "Amit Patel",
       role: "Event Manager",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop",
       rating: 5,
       text: "We've used their event security services multiple times for large conferences. Their crowd management skills are exceptional, and they handle everything professionally.",
     },
     {
       name: "Sneha Kulkarni",
       role: "Factory Owner",
-      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop",
       rating: 5,
       text: "The industrial security solution provided by Abhyuday has been outstanding. Their systematic approach and trained guards have significantly reduced security incidents at our facility.",
     },
     {
       name: "Vikram Singh",
       role: "Business Executive",
-      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop",
       rating: 5,
       text: "I require personal security for my business travels. Their bodyguards are highly professional, discreet, and always alert. I feel completely safe under their protection.",
     },
     {
       name: "Meera Joshi",
       role: "School Principal",
-      image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=100&h=100&fit=crop",
       rating: 5,
       text: "The security staff at our school is wonderful with children while maintaining high security standards. Parents appreciate the safe environment they've created.",
     },
@@ -80,16 +74,9 @@ const Testimonials = () => {
                   "{testimonial.text}"
                 </p>
 
-                <div className="flex items-center gap-4 pt-4 border-t border-border">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full object-cover border-2 border-primary"
-                  />
-                  <div>
-                    <div className="font-semibold text-foreground">{testimonial.name}</div>
-                    <div className="text-sm text-muted-foreground">{testimonial.role}</div>
-                  </div>
+                <div className="pt-4 border-t border-border">
+                  <div className="font-semibold text-foreground">{testimonial.name}</div>
+                  <div className="text-sm text-muted-foreground">{testimonial.role}</div>
                 </div>
               </CardContent>
             </Card>

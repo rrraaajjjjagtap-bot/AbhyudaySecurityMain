@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Award, Users } from "lucide-react";
-import teamPhoto from "@/assets/team-photo.jpg";
+import vipSecurity from "@/assets/vip-security.jpg";
 import logo from "@/assets/logo.png";
 
 const Hero = () => {
@@ -11,6 +11,14 @@ const Hero = () => {
     }
   };
 
+  const handleCall = () => {
+    window.location.href = "tel:8600338884";
+  };
+
+  const handleWhatsApp = () => {
+    window.open("https://wa.me/918600338884?text=Hello, I'm interested in your security services", "_blank");
+  };
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-12 md:pb-0">
       {/* Animated Background */}
@@ -18,17 +26,21 @@ const Hero = () => {
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDEzNGg4djhoLThWMTM0em0wLTE2aDh2OGgtOHYtOHptMTYgMzJoOHY4aC04di04em0tMTYgMGg4djhoLThWMTUwem0wLTE2aDh2OGgtOHYtOHptMTYgMGg4djhoLThWMTM0em0xNiAzMmg4djhoLTh2LTh6bS0xNiAwaDh2OGgtOHYtOHptMTYtMTZoOHY4aC04VjE1MHptMCAxNmg4djhoLTh2LTh6bTAtMzJoOHY4aC04VjEzNHptMCAxNmg4djhoLThWMTUweiIvPjwvZz48L2c+PC9zdmc+')] opacity-30" />
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        {/* Centered Logo with Fancy Effects */}
+        <div className="flex justify-center mb-8 md:mb-12 animate-fade-in">
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent blur-3xl opacity-30 animate-pulse" />
+            <img 
+              src={logo} 
+              alt="Abhyuday Security Services Logo" 
+              className="h-32 sm:h-40 md:h-48 lg:h-56 w-auto relative z-10 drop-shadow-2xl hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Text Content */}
           <div className="space-y-6 md:space-y-8 animate-slide-in-left">
-            {/* Logo */}
-            <div className="mb-6 animate-fade-in">
-              <img 
-                src={logo} 
-                alt="Abhyuday Security Services Logo" 
-                className="h-16 sm:h-20 md:h-24 w-auto"
-              />
-            </div>
             
             <div className="space-y-3 md:space-y-4">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
@@ -47,8 +59,11 @@ const Hero = () => {
               <Button onClick={scrollToContact} size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg w-full sm:w-auto">
                 Book Consultation
               </Button>
-              <Button onClick={() => window.location.href = "tel:8766970868"} size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg w-full sm:w-auto">
+              <Button onClick={handleCall} size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg w-full sm:w-auto">
                 Call Now
+              </Button>
+              <Button onClick={handleWhatsApp} size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg w-full sm:w-auto">
+                WhatsApp
               </Button>
             </div>
 
@@ -77,8 +92,8 @@ const Hero = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-accent/20 mix-blend-overlay" />
               <img
-                src={teamPhoto}
-                alt="Professional Security Team - Abhyuday Security Services"
+                src={vipSecurity}
+                alt="VIP & Personal Security - Professional bodyguards & gunman security"
                 className="w-full h-[400px] sm:h-[500px] lg:h-[600px] object-cover"
               />
             </div>

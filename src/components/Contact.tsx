@@ -93,16 +93,16 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Phone</h4>
+                  <a href="tel:8600338884" className="text-muted-foreground hover:text-primary transition-colors">
+                    +91 8600338884
+                  </a>
+                  <br />
                   <a href="tel:9206472006" className="text-muted-foreground hover:text-primary transition-colors">
                     +91 9206472006
                   </a>
                   <br />
                   <a href="tel:8766970868" className="text-muted-foreground hover:text-primary transition-colors">
                     +91 8766970868
-                  </a>
-                  <br />
-                  <a href="tel:8600338884" className="text-muted-foreground hover:text-primary transition-colors">
-                    +91 8600338884
                   </a>
                 </div>
               </div>
@@ -126,7 +126,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Location</h4>
                   <p className="text-muted-foreground">
-                    Maharashtra, India
+                    Rudraksh Residency, Tamjai Nagar, Satara, Maharashtra
                   </p>
                 </div>
               </div>
@@ -135,7 +135,7 @@ const Contact = () => {
             {/* Map */}
             <div className="rounded-2xl overflow-hidden border border-border h-[400px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.2613173278896!2d73.91411607501422!3d18.562253682539413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c147b8b3a3bf%3A0x6f7fdcc8e4d6c77e!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1699000000000!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.8345!2d73.9972!3d17.6854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDQxJzA3LjQiTiA3M8KwNTknNTAuMCJF!5e0!3m2!1sen!2sin!4v1699000000000!5m2!1sen!2sin&q=Rudraksh+Residency+Tamjai+Nagar+Satara"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
