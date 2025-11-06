@@ -4,6 +4,8 @@ import eventSecurity from "@/assets/event-security.jpg";
 import securityTeam from "@/assets/security-team-uniform.jpg";
 import bouncerImg from "@/assets/bouncer.jpg";
 import executiveSecurity from "@/assets/executive-security.jpg";
+import securityDiagram from "@/assets/security-services-diagram.png";
+import securityPriority from "@/assets/security-priority.png";
 
 const Services = () => {
   const services = [
@@ -58,8 +60,13 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-24 bg-background">
-      <div className="container mx-auto px-4">
+    <section id="services" className="py-24 bg-background relative overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 opacity-5">
+        <img src={securityPriority} alt="" className="w-full h-full object-cover" />
+      </div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16 space-y-4 animate-fade-in">
           <h2 className="text-sm uppercase tracking-wider text-accent font-semibold">Our Services</h2>
           <h3 className="text-4xl md:text-5xl font-bold text-foreground">
@@ -68,6 +75,18 @@ const Services = () => {
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             From corporate offices to personal protection, we provide tailored security services that meet the highest standards of professionalism and reliability.
           </p>
+        </div>
+
+        {/* Security Services Diagram */}
+        <div className="flex justify-center mb-16 animate-scale-in">
+          <div className="relative max-w-2xl">
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/30 to-accent/30 blur-3xl rounded-full opacity-50 animate-pulse" />
+            <img 
+              src={securityDiagram} 
+              alt="Security Services Overview" 
+              className="relative z-10 w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-500 rounded-2xl"
+            />
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

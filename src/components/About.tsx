@@ -1,5 +1,7 @@
 import { CheckCircle, Shield, Users, Award, Clock, Target } from "lucide-react";
 import founderRef from "@/assets/founder-photo.png";
+import securityTeamSilhouette from "@/assets/security-team-silhouette.jpg";
+import securityProfessional from "@/assets/security-professional.png";
 
 const About = () => {
   const features = [
@@ -11,8 +13,13 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-16 md:py-24 bg-card/50">
-      <div className="container mx-auto px-4 sm:px-6">
+    <section id="about" className="py-16 md:py-24 bg-card/50 relative overflow-hidden">
+      {/* Background Team Silhouette */}
+      <div className="absolute top-0 right-0 w-1/2 h-96 opacity-5 pointer-events-none">
+        <img src={securityTeamSilhouette} alt="" className="w-full h-full object-contain" />
+      </div>
+      
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         {/* Trust Message */}
         <div className="max-w-4xl mx-auto text-center mb-12 md:mb-16 animate-fade-in">
           <div className="bg-primary/10 backdrop-blur-sm border border-primary/20 rounded-2xl p-6 md:p-8">
@@ -103,6 +110,17 @@ const About = () => {
 
           {/* Features Grid */}
           <div className="space-y-4 md:space-y-6 animate-slide-in-right">
+            {/* Security Professional Image */}
+            <div className="relative overflow-hidden rounded-2xl mb-6 group">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <img 
+                src={securityProfessional} 
+                alt="Professional Security Guard" 
+                className="w-full h-64 object-cover relative z-10 grayscale hover:grayscale-0 transition-all duration-500 drop-shadow-2xl"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+            </div>
+
             {features.map((feature, index) => (
               <div
                 key={index}
