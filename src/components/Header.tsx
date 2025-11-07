@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-new.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,7 +31,7 @@ const Header = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          <img src={logo} alt="Abhyuday Security Services" className="h-16 w-auto" />
+          <img src={logo} alt="Abhyuday Security Services" className="h-16 w-auto mix-blend-lighten" style={{ filter: 'drop-shadow(0 0 20px rgba(252, 211, 77, 0.5))' }} />
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
