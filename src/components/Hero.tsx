@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Award, Users } from "lucide-react";
 import vipSecurity from "@/assets/vip-security.jpg";
-import logo from "@/assets/logo-new.png";
+import logo from "@/assets/logo.png";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -40,8 +40,10 @@ const Hero = () => {
             <img 
               src={logo} 
               alt="Abhyuday Security Services Logo" 
-              className="h-40 sm:h-48 md:h-56 lg:h-64 w-auto relative z-10 drop-shadow-[0_20px_50px_rgba(252,211,77,0.8)] hover:scale-110 hover:drop-shadow-[0_30px_80px_rgba(252,211,77,1)] transition-all duration-500 mix-blend-lighten"
-              style={{ filter: 'drop-shadow(0 0 50px rgba(252, 211, 77, 0.9)) drop-shadow(0 0 80px rgba(252, 211, 77, 0.6))' }}
+              className="h-40 sm:h-48 md:h-56 lg:h-64 w-auto relative z-10 hover:scale-110 transition-all duration-500"
+              style={{ 
+                filter: 'drop-shadow(0 10px 40px rgba(252, 211, 77, 0.8)) drop-shadow(0 0 60px rgba(252, 211, 77, 0.5)) drop-shadow(0 0 100px rgba(252, 211, 77, 0.3))'
+              }}
             />
           </div>
         </div>
