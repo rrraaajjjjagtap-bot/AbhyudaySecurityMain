@@ -12,11 +12,11 @@ const Hero = () => {
   };
 
   const handleCall = () => {
-    window.location.href = "tel:8600338884";
+    window.location.href = "tel:9766970868";
   };
 
   const handleWhatsApp = () => {
-    window.open("https://wa.me/918600338884?text=Hello, I'm interested in your security services", "_blank");
+    window.open("https://wa.me/918600330001?text=Hello, I'm interested in your security services", "_blank");
   };
 
   return (
@@ -28,12 +28,20 @@ const Hero = () => {
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         {/* Centered Logo with Fancy Effects */}
         <div className="flex justify-center mb-8 md:mb-12 animate-fade-in">
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent blur-3xl opacity-30 animate-pulse" />
+          <div className="relative group">
+            {/* Animated glow rings */}
+            <div className="absolute inset-0 bg-gradient-to-r from-primary via-accent to-primary blur-3xl opacity-40 animate-pulse group-hover:opacity-60 transition-opacity duration-500" />
+            <div className="absolute inset-0 bg-primary/30 blur-2xl animate-glow" style={{ animationDelay: '0.5s' }} />
+            
+            {/* Multiple shadow layers for depth */}
+            <div className="absolute inset-0 shadow-[0_0_60px_rgba(25,211,243,0.5)] rounded-full" />
+            <div className="absolute inset-0 shadow-[0_0_100px_rgba(252,211,77,0.3)] rounded-full animate-pulse" />
+            
             <img 
               src={logo} 
               alt="Abhyuday Security Services Logo" 
-              className="h-32 sm:h-40 md:h-48 lg:h-56 w-auto relative z-10 drop-shadow-2xl hover:scale-105 transition-transform duration-300"
+              className="h-40 sm:h-48 md:h-56 lg:h-64 w-auto relative z-10 drop-shadow-[0_20px_50px_rgba(25,211,243,0.6)] hover:scale-110 hover:drop-shadow-[0_30px_80px_rgba(252,211,77,0.8)] transition-all duration-500 filter brightness-110 contrast-110"
+              style={{ filter: 'drop-shadow(0 0 40px rgba(25,211,243,0.8))' }}
             />
           </div>
         </div>

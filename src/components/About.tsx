@@ -1,5 +1,6 @@
-import { CheckCircle, Shield, Users, Award, Clock, Target } from "lucide-react";
+import { CheckCircle, Shield, Users, Award, Clock, Target, TrendingUp, Briefcase, Lightbulb } from "lucide-react";
 import founderRef from "@/assets/founder-photo.png";
+import ownerSon from "@/assets/owner-son.png";
 import securityTeamSilhouette from "@/assets/security-team-silhouette.jpg";
 import securityProfessional from "@/assets/security-professional.png";
 
@@ -54,6 +55,73 @@ const About = () => {
               <p>We are one of the leading security agencies in the state of maharashtra, we provide all types of security services. you can contact us for reliable and proficient security services.</p>
               <p>Approved by the state government of maharashtra,</p>
               <p className="font-semibold text-accent">ABHYUDAY SECURITY SERVICES is a certifird security service provider in the state of maharashtra</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Owner's Son Section - Next Generation Leadership */}
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center mb-16 md:mb-20">
+          <div className="space-y-4 md:space-y-6 animate-slide-in-left order-2 lg:order-1">
+            <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              Future-Forward Leadership
+            </h2>
+            <div className="space-y-3 md:space-y-4">
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                Bringing fresh perspective and ambition to our legacy of excellence in security services.
+              </p>
+              
+              <div className="space-y-4">
+                <div className="flex items-start gap-4 p-4 bg-card rounded-xl border border-border hover:border-primary/50 transition-all group">
+                  <div className="bg-primary/10 p-3 rounded-lg group-hover:bg-primary transition-colors">
+                    <TrendingUp className="h-6 w-6 text-primary group-hover:text-primary-foreground transition-colors" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-1">Visionary Growth</h4>
+                    <p className="text-sm text-muted-foreground">Driving business expansion with modern strategies and innovative solutions</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 p-4 bg-card rounded-xl border border-border hover:border-primary/50 transition-all group">
+                  <div className="bg-accent/10 p-3 rounded-lg group-hover:bg-accent transition-colors">
+                    <Briefcase className="h-6 w-6 text-accent group-hover:text-accent-foreground transition-colors" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-1">Business Excellence</h4>
+                    <p className="text-sm text-muted-foreground">Combining traditional values with contemporary business acumen</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 p-4 bg-card rounded-xl border border-border hover:border-primary/50 transition-all group">
+                  <div className="bg-primary/10 p-3 rounded-lg group-hover:bg-primary transition-colors">
+                    <Lightbulb className="h-6 w-6 text-primary group-hover:text-primary-foreground transition-colors" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-1">Innovation Mindset</h4>
+                    <p className="text-sm text-muted-foreground">Implementing cutting-edge technology and processes for superior service delivery</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-r from-primary/10 to-accent/10 backdrop-blur-sm border border-primary/20 rounded-xl p-5 md:p-6 mt-6">
+                <p className="text-sm md:text-base text-foreground italic leading-relaxed">
+                  "Committed to elevating Abhyuday Security Services to new heights while maintaining the trust and excellence our founder established. Our mission is to be the premier security provider across Maharashtra and beyond."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex justify-center lg:justify-start animate-slide-in-right order-1 lg:order-2">
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/40 to-primary/40 rounded-2xl blur-3xl opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-accent/20 blur-xl animate-pulse" />
+              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-2xl overflow-hidden border-4 border-accent/50 shadow-2xl shadow-accent/30">
+                <img 
+                  src={ownerSon} 
+                  alt="Next Generation Leadership - Abhyuday Security Services" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+              </div>
             </div>
           </div>
         </div>
