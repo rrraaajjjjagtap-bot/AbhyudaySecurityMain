@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Award, Users } from "lucide-react";
-import vipSecurity from "@/assets/vip-security.jpg";
+import securityProfessional from "@/assets/security-professional.png";
 import logo from "@/assets/logo.png";
 
 const Hero = () => {
@@ -99,14 +99,28 @@ const Hero = () => {
 
           {/* Image Section */}
           <div className="relative animate-slide-in-right mt-8 lg:mt-0">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-accent/20 mix-blend-overlay" />
-              <img
-                src={vipSecurity}
-                alt="VIP & Personal Security - Professional bodyguards & gunman security"
-                className="w-full h-[400px] sm:h-[500px] lg:h-[600px] object-cover"
-              />
+            <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-primary/10 via-accent/5 to-primary/10 p-8 shadow-2xl">
+              {/* Decorative background elements */}
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(25,211,243,0.15),transparent_50%)]" />
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(252,211,77,0.15),transparent_50%)]" />
+              
+              {/* Security professional image */}
+              <div className="relative z-10 flex justify-center items-end">
+                <img
+                  src={securityProfessional}
+                  alt="Professional Security Guard - Elite Protection Services"
+                  className="w-full max-w-md h-auto object-contain hover:scale-105 transition-transform duration-500"
+                  style={{ 
+                    filter: 'drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 30px rgba(25, 211, 243, 0.2))'
+                  }}
+                />
+              </div>
+              
+              {/* Decorative accent shapes */}
+              <div className="absolute top-8 left-8 w-20 h-20 border-4 border-accent/30 rounded-full animate-pulse" />
+              <div className="absolute bottom-12 right-12 w-16 h-16 border-4 border-primary/30 rotate-45" />
             </div>
+            
             <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 bg-accent text-accent-foreground p-4 sm:p-6 rounded-2xl shadow-lg animate-glow">
               <p className="text-xs sm:text-sm font-semibold">Since 2012</p>
               <p className="text-lg sm:text-2xl font-bold">Trusted Leader</p>
