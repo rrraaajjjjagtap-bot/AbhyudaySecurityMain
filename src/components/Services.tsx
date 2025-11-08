@@ -1,4 +1,4 @@
-import { Building2, Users, ShieldCheck, Video, Car, Home, Factory, School, Dog, Shield } from "lucide-react";
+import { Building2, Users, ShieldCheck, Video, Car, Home, Factory, School, Dog, Shield, Flame } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import eventSecurity from "@/assets/event-security.jpg";
 import securityTeam from "@/assets/security-team-uniform.jpg";
@@ -9,6 +9,7 @@ import securityPriority from "@/assets/security-priority.png";
 import k9Security from "@/assets/k9-security.jpg";
 import vipSecurity from "@/assets/vip-security.jpg";
 import escortSecurity from "@/assets/escort-security.jpg";
+import fireSecurity from "@/assets/fire-security.jpg";
 
 const Services = () => {
   const services = [
@@ -41,6 +42,12 @@ const Services = () => {
       title: "Escort Security Service",
       description: "Complete escort security with car, driver, and trained guards for safe transportation of VIPs and valuable assets.",
       image: escortSecurity
+    },
+    {
+      icon: Flame,
+      title: "Fire Security Services",
+      description: "Professional fire safety and emergency response services with trained firefighting personnel and modern equipment.",
+      image: fireSecurity
     },
     {
       icon: Video,
