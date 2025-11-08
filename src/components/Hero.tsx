@@ -12,7 +12,7 @@ const Hero = () => {
   };
 
   const handleCall = () => {
-    window.location.href = "tel:9766970868";
+    window.location.href = "tel:+918600330001";
   };
 
   const handleWhatsApp = () => {

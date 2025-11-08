@@ -1,4 +1,4 @@
-import { Building2, Users, ShieldCheck, Video, Car, Home, Factory, School } from "lucide-react";
+import { Building2, Users, ShieldCheck, Video, Car, Home, Factory, School, Dog, Shield } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import eventSecurity from "@/assets/event-security.jpg";
 import securityTeam from "@/assets/security-team-uniform.jpg";
@@ -6,6 +6,9 @@ import bouncerImg from "@/assets/bouncer.jpg";
 import executiveSecurity from "@/assets/executive-security.jpg";
 import securityDiagram from "@/assets/security-services-diagram.png";
 import securityPriority from "@/assets/security-priority.png";
+import k9Security from "@/assets/k9-security.jpg";
+import vipSecurity from "@/assets/vip-security.jpg";
+import escortSecurity from "@/assets/escort-security.jpg";
 
 const Services = () => {
   const services = [
@@ -23,9 +26,21 @@ const Services = () => {
     },
     {
       icon: ShieldCheck,
-      title: "Personal Protection",
-      description: "Elite bodyguard services for VIPs, executives, and high-profile individuals with discretion and expertise.",
-      image: executiveSecurity
+      title: "VIP & Personal Security",
+      description: "Elite bodyguard services for VIPs, executives, and high-profile individuals. Professional bodyguards & gunman security.",
+      image: vipSecurity
+    },
+    {
+      icon: Dog,
+      title: "K-9 Security Services",
+      description: "Professional dog patrol and K-9 security units for enhanced protection and threat detection at your premises.",
+      image: k9Security
+    },
+    {
+      icon: Shield,
+      title: "Escort Security Service",
+      description: "Complete escort security with car, driver, and trained guards for safe transportation of VIPs and valuable assets.",
+      image: escortSecurity
     },
     {
       icon: Video,
